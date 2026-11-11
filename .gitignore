@@ -1,0 +1,39 @@
+cat >> .gitignore <<'EOF'
+
+# Virtual Environments
+.venv/
+.venv-data/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Models
+models/
+
+# Local Datasets
+datasets/
+
+# Generated OCR Results
+data/output/
+
+# Environment Variables and Secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Logs
+*.log
+EOF

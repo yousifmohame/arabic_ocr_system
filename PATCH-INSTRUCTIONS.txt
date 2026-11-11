@@ -1,0 +1,15 @@
+Arabic Doc AI patch: local model name mismatch
+
+Replace this file in your existing project:
+  src/arabic_doc_ai/engine.py
+
+Do NOT replace or delete your models/ directory. The model downloads already
+completed successfully and should be preserved.
+
+The fix explicitly passes:
+  text_detection_model_name="PP-OCRv5_mobile_det"
+  text_recognition_model_name="arabic_PP-OCRv5_mobile_rec"
+
+These names must match the local model directories' inference.yml metadata.
+Then run from the project root with .venv activated:
+  python scripts/prepare_models.py

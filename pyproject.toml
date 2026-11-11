@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabic-doc-ai"
+version = "0.3.1"
+description = "Local CPU-only Arabic OCR for scanned documents"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+authors = [{ name = "Arabic Doc AI contributors" }]
+license = "Apache-2.0"
+
+[project.scripts]
+arabic-doc-ocr = "arabic_doc_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,8 @@
+# Install PaddlePaddle separately for your OS/CPU from the official guide.
+paddleocr>=3.3.0,<3.4
+PyMuPDF>=1.24,<2
+Pillow>=10,<13
+numpy>=1.26,<3
+opencv-python-headless>=4.9,<5
+huggingface_hub>=0.27
+psutil>=5.9,<8
